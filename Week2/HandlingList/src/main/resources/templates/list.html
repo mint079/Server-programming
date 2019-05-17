@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Server Programming</title>
+	</head>
+	<body>
+		<ul th:each="student: ${studentlist}">
+			<li th:text="${student.firstName}+' '+${student.lastName} "></li>
+		</ul>
+	</body>
+</html>
